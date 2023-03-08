@@ -1,0 +1,117 @@
+@include media-breakpoint(basic) {
+    @font-face {
+        font-family: 'Product Sans';
+        src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+            url('../fonts/ProductSans-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Product Sans';
+        src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+            url('../fonts/ProductSans-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Product Sans';
+        src: url('../fonts/ProductSans-BoldItalic.woff2') format('woff2'),
+            url('../fonts/ProductSans-BoldItalic.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Product Sans';
+        src: url('../fonts/ProductSans-Italic.woff2') format('woff2'),
+            url('../fonts/ProductSans-Italic.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Monument Extended';
+        src: url('../fonts/MonumentExtended-Regular.woff2') format('woff2'),
+            url('../fonts/MonumentExtended-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Monument Extended';
+        src: url('../fonts/MonumentExtended-Ultrabold.woff2') format('woff2'),
+            url('../fonts/MonumentExtended-Ultrabold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Manrope';
+        src: url('../fonts/Manrope-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+}
+@include media-breakpoint-down(xl) {
+}
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(sm) {
+}
+
+[data-bs-theme=dark] {
+    @include dark-media-breakpoint(basic) {
+      
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include dark-media-breakpoint-up(sm) {
+    }
+    @include dark-media-breakpoint-up(md) {
+    }
+    @include dark-media-breakpoint-up(lg) {
+    }
+    @include dark-media-breakpoint-up(xl) {
+    }
+    @include dark-media-breakpoint-up(xxl) {
+    }
+
+
+    @include dark-media-breakpoint-down(xxl) {
+    }
+    @include dark-media-breakpoint-down(xl) {
+    }
+    @include dark-media-breakpoint-down(lg) {
+    }
+    @include dark-media-breakpoint-down(md) {
+    }
+    @include dark-media-breakpoint-down(sm) {
+    }
+}

@@ -1,0 +1,195 @@
+// @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@include media-breakpoint(basic) {
+    .footer {
+        & .container {
+            // background-image: url('../Group 42.png');
+            // background-position: top;
+            // background-size: cover;
+        }
+        & .footerHeading {
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+            color: #0A193F;
+        }
+        & .footerLinks{
+            & .footerLinkLi {
+                & .footerLink {
+                    font-family: 'Manrope';
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #000000;
+                    display: block;
+                    padding: 12px 0;
+                }
+            }
+        }
+        & .bottomFooter {
+            & .copyRightText {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #0A193F;
+            }
+            & .linkIcons {
+                height: 35px;
+                &.twitterIcon {
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .footer {
+        & .container {
+        }
+        & .footerHeading {
+        }
+        & .footerLinks{
+            & .footerLinkLi {
+                & .footerLink {
+                }
+            }
+        }
+        & .bottomFooter {
+            & .copyRightText {
+            }
+            & .linkIcons {
+                &.twitterIcon {
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xl) {
+    .footer {
+        & .container {
+        }
+        & .footerHeading {
+        }
+        & .footerLinks{
+            & .footerLinkLi {
+                & .footerLink {
+                }
+            }
+        }
+        & .bottomFooter {
+            & .copyRightText {
+            }
+            & .linkIcons {
+                &.twitterIcon {
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    .footer {
+        & .container {
+        }
+        & .footerHeading {
+        }
+        & .footerLinks{
+            & .footerLinkLi {
+                & .footerLink {
+                }
+            }
+        }
+        & .bottomFooter {
+            & .copyRightText {
+            }
+            & .linkIcons {
+                height: 30px;
+                &.twitterIcon {
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .footer {
+        & .container {
+        }
+        & .footerHeading {
+            margin: 8px 0 5px 0;
+            padding: 0;
+            & + .col-12 {
+                padding: 0;
+            }
+            &.invisible {
+                display: none !important;
+            }
+        }
+        & .footerLinks{
+            & .footerLinkLi {
+                & .footerLink {
+                    padding: 6px 0;
+                }
+            }
+        }
+        & .bottomFooter {
+            & .copyRightText {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+            & .linkIcons {
+                height: 30px;
+                &.twitterIcon {
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .footer {
+        & .container {
+        }
+        & .footerHeading {
+            margin: 8px 0 5px 0;
+            &.invisible {
+                display: none !important;
+            }
+        }
+        & .footerLinks{
+            & .footerLinkLi {
+                & .footerLink {
+                    padding: 6px 0;
+                }
+            }
+        }
+        & .bottomFooter {
+            & .copyRightText {
+                text-align: center;
+                margin-bottom: 8px;
+            }
+            & .linkIcons {
+                height: 30px;
+                &.twitterIcon {
+                    height: 17px;
+                }
+            }
+        }
+    }
+}

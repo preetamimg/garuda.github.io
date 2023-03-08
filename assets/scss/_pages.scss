@@ -1,0 +1,2335 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  homePage start  ]@@@@@@@@@@@@@@@@@@@@@@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+[data-page-name=homePage] {
+    @include media-breakpoint(basic) {
+        // Hero Section
+        & .heroSection {
+            & .heroSwiper {
+                & .heroSlideBox {
+                    & .heroSlide {
+                    }
+                }
+                & .swiper-button-next {
+                    &::after {
+                        content: "";
+                        background-image: url(../svg/icons/arrowRight.svg);
+                        height: 50px;
+                        width: 50px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    &.swiper-button-disabled {
+                        opacity: 1 !important;
+                        &::after {
+                            background-image: url(../svg/icons/arrowRightWhite.svg);
+                        }
+                    }
+                }
+                & .swiper-button-prev  {
+                    &::after {
+                        content: "";
+                        background-image: url(../svg/icons/arrowLeft.svg);
+                        height: 50px;
+                        width: 50px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    &.swiper-button-disabled {
+                        &::after {
+                            background-image: url(../svg/icons/arrowLeftWhite.svg);
+                        }
+                        opacity: 1 !important;
+                    }
+                }
+            }
+            & .dgcaImg {
+                right: 72px;
+                bottom: 76px;
+                z-index: 9;
+                & img {
+                    height: 172px;
+                }
+            }
+        }
+        // Garuda Aerospece Section
+        & .garudaAerospaceSection {
+            // background-image: url('../Group57.png');
+            // background-position: top;
+            // background-size: cover;
+            & .garudaAerospaceImg {
+                & img {
+                    width: 100%;
+                }
+            }
+            & .garudaAerospaceHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 110.5%;
+                /* or 44px */
+                
+                letter-spacing: 0.085em;
+                
+                color: #3531CC;
+                padding-top: 31px;
+            }
+            & .garudaAerospaceSubHeading {
+                font-family: 'Product Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 114.3%;
+                /* identical to box height, or 37px */
+
+                color: #616161;
+                padding-top: 16px;
+            }
+            & .garudaAerospaceContent {
+                font-family: 'Product Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 114.3%;
+                /* or 23px */
+
+
+                color: #868686;
+                padding-top: 14px;
+            }
+            & .garudaAerospaceBtn {
+                transition: .3s all ease-in-out;
+                & span {
+                    font-family: 'Product Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 114.3%;
+                    transition: .3s all ease-in-out;
+                    /* or 23px */
+
+
+                    color: #A3A3A3;
+                    & img {
+                        width: 38px;
+                        height: 38px;
+                    }
+                }
+                &:hover {
+                    & span {
+                        color: #575757;
+                        & img {
+                        }                    
+                    }
+                }
+            }
+        }
+        // We Are Built Section
+        & .weAreBuiltSection {
+            // background-image: url('../Group58.png');
+            // background-position: top;
+            // background-size: cover;
+            & .weAreBuiltHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 114.3%;
+                /* or 41px */
+                
+                
+                color: #D2D2D2;
+            }
+            & .weAreBuiltItems {
+                & .weAreBuiltItem {
+                    & .weAreBuiltItemInner {
+                        background: #F7F7F7;
+                        border-radius: 20px;
+                        padding: 30px 10px;
+                        & .weAreBuiltCounterValue {
+                            font-family: 'Monument Extended';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 48px;
+                            line-height: 114.3%;
+                            /* identical to box height, or 55px */
+                            
+                            
+                            color: #3531CC;
+                        }
+                        & .weAreBuiltCounterLabel {
+                            font-family: 'Product Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 124.3%;
+                            /* identical to box height, or 30px */
+                            
+                            letter-spacing: 0.07em;
+                            
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+        // product section
+        & .ourProductsSection {
+            & .sectionHeading {
+                font-family: 'Monument Extended';
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                color: #3531CC;
+            }
+            & .productMainCard {
+                box-shadow: 13px 15px 14px rgba(0, 0, 0, 0.06);
+                border-radius: 28px;
+                & .cardImg {
+                    & img {}
+                }
+                & .cardDetail {
+                    & .cardHeading {
+                        font-family: 'Monument Extended';
+                        font-weight: 400;
+                        font-size: 48px;
+                        line-height: 114.3%;
+                        color: #3531CC;
+                        margin-top: 30px;
+                    }
+                    & .cardPara {
+                        font-family: 'Product Sans';
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 114.3%;
+                        color: #868686;
+                    }
+                    & .reserveBtn {
+                        font-family: 'Product Sans';
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 39px;
+                        color: #3531CC;
+                        & img {
+                            height: 20px;
+                        }
+                    }
+                    & .buyNowBtn {
+                        font-family: 'Product Sans';
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 39px;
+                        color: #FFFFFF;
+                        background: #3531CC;
+                        border-radius: 10px;
+                        width: 159px;
+                        height: 44px;
+                    }
+                }
+            }
+            & .productCard {
+                border-radius: 20px;
+                box-shadow: 2px 17px 34px -1px rgba(0, 0, 0, 0.15);
+                overflow: hidden;
+                & .proImg {
+                    height: 288px;
+                    & img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .proDetails {
+                    padding-bottom: 15px;
+                }
+                & .proHead {
+                    font-family: 'Product Sans';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 114.3%;
+                    margin-top: 12px;
+                    margin-bottom: 16px;
+                }
+                & .readMoreBtn {
+                    font-family: 'Product Sans';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #868686;
+                }
+                & .enquiryBtn {
+                    width: 109px;
+                    height: 26px;
+                    background: #3531CC;
+                    border-radius: 10px;
+                    font-family: 'Product Sans';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                }
+            }
+            & .viewAllBtn {
+                font-family: 'Product Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #A3A3A3;
+                border: 2px solid #D2D2D2;
+                border-radius: 10px;
+                width: 127px;
+                height: 40px;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: #D2D2D2;
+                    color: darken(#A3A3A3, 21);
+                }
+            }
+        }
+        // Industries Section
+        & .industriesSection {
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .industriesHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                /* identical to box height, or 55px */
+                text-align: center;
+
+
+                color: #3531CC;
+            }
+            & .industriesItems {
+                & .industriesItem {
+                    & .industriesItemInner {
+                        background: #FFFFFF;
+                        box-shadow: 2px 17px 34px -1px rgba(0, 0, 0, 0.15);
+                        border-radius: 20px;
+                        padding: 18px;
+                        & .industriesItemImg {
+                            border-radius: 8px;
+                            & img {
+                                aspect-ratio: 40/35.5;
+                                border-radius: 8px;
+                            }
+                        }
+                        & .industriesItemHeading {
+                            font-family: 'Monument Extended';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 114.3%;
+                            /* or 27px */
+                            
+                            
+                            color: #000000;
+                            padding-top: 28px;
+                        }
+                        & .industriesItemContent {
+                            font-family: 'Product Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 147.8%;
+                            /* or 24px */
+                            
+                            
+                            color: #868686;
+                            padding-top: 8px;
+                        }
+                        & .IndustriesItemBtn {
+                            padding-bottom: 5px;
+                            & a {
+                                background: #3531CC;
+                                border-radius: 10px;
+                                font-family: "Product Sans";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 15px;
+                                line-height: 18px;
+                                color: #FFFFFF;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            & .viewAllBtn {
+                font-family: 'Product Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #A3A3A3;
+                border: 2px solid #D2D2D2;
+                border-radius: 10px;
+                width: 127px;
+                height: 40px;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: #D2D2D2;
+                    color: darken(#A3A3A3, 21);
+                }
+            }
+        }
+        // Why Us Section
+        & .whyUsSection {
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .whyUsHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                /* identical to box height, or 55px */
+
+                text-align: center;
+
+                color: #3531CC;
+            }
+            & .whyUsProcess {
+                object-fit: fill;
+                aspect-ratio: 100/35;
+                object-position: center;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        // story Section
+        & .storySection {
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .successStoryHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                text-align: center;
+                color: #3531CC;
+            }
+            & .successStorySlider {
+                & .owl-stage-outer {
+                    padding: 0;
+                }
+                & .item-video {
+                    aspect-ratio: 717/347;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    & .owl-video-tn {
+                        background-size: cover;
+                    }
+                    & .owl-video-play-icon {
+                        background: url(../img/youtube.png) no-repeat;
+                        background-position: center center;
+                        background-size: 80px;
+                        &:hover {
+                            transform: scale(1) !important;
+                        }
+                    }
+                    & iframe {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                & .owl-nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 30px;
+                    & .owl-prev ,
+                    & .owl-next {
+                        height: 38px;
+                        width: 38px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba(217, 217, 217, 0.68);
+                        border-radius: 50%;
+                        margin: 0 20px;
+                        & img {
+                            height: 14px;
+                        }
+                    }
+                    & .owl-prev {}
+                    & .owl-next {}
+                }
+            }
+            & .successText {
+                font-family: 'Manrope' !important;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(53, 65, 97, 0.8);
+            }
+            & .farmerText {
+                font-family: 'Monument Extended';
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 46px;
+                color: #484848;
+            }
+        }
+        // FAQs Section
+        & .faqSection {
+            background: rgba(217, 217, 217, 0.37);
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .faqHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                /* identical to box height, or 55px */
+                text-align: center;
+                color: #3531CC;
+            }
+            & .accordion {
+                & .accordion-item {
+                    border-top: 1px solid rgba(0, 0, 0, 0.15);
+                    border-right: 0px;
+                    border-bottom: 0px;
+                    border-left: 0px;
+                    border-radius: 0px;
+                    padding: 30px 0px;
+                    &:last-child {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                    }
+                    & .accordion-header {
+                        & .accordion-button {
+                            font-family: "Product Sans";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 24px;
+                            display: flex;
+                            align-items: center;
+                            color: rgba(53, 65, 97, 0.8);
+                            padding: 10px 36px 10px 56px;
+                            &::after {
+                                display: none;
+                            }
+                            &.collapsed {
+                                &::after {
+                                    background-image: url('../svg/icons/arrowDown.svg');
+                                    transform: none !important;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            font-family: 'Product Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            /* identical to box height, or 150% */
+                            padding: 0px 36px 30px 56px;
+                            color: rgba(53, 65, 97, 0.8);
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        // news Section
+        & .newsSection {
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .newsHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                /* identical to box height, or 55px */
+                text-align: center;
+                color: #3531CC;
+            }
+            & .newsItems {
+                & .newsItem {
+                    & .newsItemInner {
+                        padding: 18px;
+                        & .newsItemImg {
+                            border-radius: 12px;
+                            & img {
+                                aspect-ratio: 40/20;
+                                border-radius: 12px;
+                            }
+                        }
+                        & .newsItemHeading {
+                            font-family: 'Product Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 22px;
+                            /* or 120% */
+                            display: flex;
+                            align-items: center;
+                            color: #0A193F;
+                        }
+                        & .newsItemContent {
+                            font-family: 'Product Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            /* or 171% */
+                            display: flex;
+                            align-items: center;
+                            color: rgba(53, 65, 97, 0.8);
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-family: 'Product Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #A3A3A3;
+                border: 2px solid #D2D2D2;
+                border-radius: 10px;
+                width: 127px;
+                height: 40px;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: #D2D2D2;
+                    color: darken(#A3A3A3, 21);
+                }
+            }
+        }
+        // Collabrations Section
+        & .collabrationsSection {
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .collabrationsHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                /* identical to box height, or 55px */
+                text-align: center;
+                color: #3531CC;
+            }
+            & .collabrationsSubHeading {
+                font-family: "Product Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 60px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #0A193F;
+                justify-content: center;
+            }
+            & .collabrationsProcess {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        // Certified Section
+        & .certifiedSection {
+            & .container {
+                // background-image: url('../Group61.png');
+                // background-position: top;
+                // background-size: 100%;
+            }
+            & .certifiedHeading {
+                font-family: 'Monument Extended';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 114.3%;
+                /* identical to box height, or 55px */
+                text-align: center;
+                color: #3531CC;
+            }
+            & .certifiedItems {
+                & .certifiedItem  {
+                    & .certifiedItemInner {
+                        background-image: url(../svg/icons/shape1.svg);
+                        background-size: 100%;
+                        width: 136px;
+                        height: 136px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 0 6px;
+                        & img {
+                            margin-bottom: 10px;
+                            margin-right: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {
+        
+        & .heroSection {
+            & .heroSwiper {
+                & .heroSlideBox {
+                    & .heroSlide {
+                    }
+                }
+            }
+            & .swiper-button-next {
+                &::after {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .swiper-button-prev  {
+                &::after {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .dgcaImg {
+                & img {
+                }
+            }
+        }
+        & .garudaAerospaceSection {
+            & .garudaAerospaceImg {
+                & img {
+                }
+            }
+            & .garudaAerospaceHeading {
+                font-size: 37px;
+                padding-top: 22px;
+            }
+            & .garudaAerospaceSubHeading {
+                font-size: 29px;
+                padding-top: 13px;
+            }
+            & .garudaAerospaceContent {
+                font-size: 18px;
+                padding-top: 12px;
+            }
+            & .garudaAerospaceBtn {
+                & span {
+                    font-size: 20px;
+                    & img {
+                    }
+                }
+                &:hover {
+                    & span {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .industriesSection {
+            & .container {
+            }
+            & .industriesHeading {
+                font-size: 37px;
+                line-height: 114.3%;
+            }
+            & .industriesItems {
+                & .industriesItem {
+                    & .industriesItemInner {
+                        border-radius: 20px;
+                        padding: 18px;
+                        & .industriesItemImg {
+                            border-radius: 8px;
+                            & img {
+                                aspect-ratio: 40/35.5;
+                                border-radius: 8px;
+                            }
+                        }
+                        & .industriesItemHeading {
+                            font-size: 22px;
+                            line-height: 114.3%;
+                            padding-top: 28px;
+                        }
+                        & .industriesItemContent {
+                            font-size: 16px;
+                            line-height: 147.8%;
+                            padding-top: 8px;
+                        }
+                        & .IndustriesItemBtn {
+                            padding-bottom: 5px;
+                            & a {
+                                border-radius: 10px;
+                                font-size: 15px;
+                                line-height: 18px;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-size: 20px;
+                width: 120px;
+                height: 38px;
+                &:hover {
+                }
+            }
+        }
+         // product section
+        & .ourProductsSection {
+            & .sectionHeading {
+                font-size: 37px;
+            }
+            & .productMainCard {
+                & .cardImg {
+                    & img {}
+                }
+                & .cardDetail {
+                    & .cardHeading {
+                        font-size: 37px;
+                        margin-top: 15px;
+                    }
+                    & .cardPara {
+                        font-size: 18px;
+                    }
+                    & .reserveBtn {
+                        font-size: 25px;
+                        & img {
+                            height: 16px;
+                        }
+                    }
+                    & .buyNowBtn {
+                        font-size: 25px;
+                        width: 145px;
+                        height: 40px;
+                    }
+                }
+            }
+            & .productCard {
+                & .proImg {
+                    & img {
+                    }
+                }
+                & .proDetails {
+                }
+                & .proHead {
+                    font-size: 22px;
+                }
+                & .readMoreBtn {
+                }
+                & .enquiryBtn {
+                }
+            }
+            & .viewAllBtn {
+                font-size: 20px;
+                width: 120px;
+                height: 38px;
+                &:hover {
+                }
+            }
+        }
+        
+        // Why Us Section
+        & .whyUsSection {
+            & .container {
+            }
+            & .whyUsHeading {
+                font-size: 37px;
+            }
+            & .whyUsProcess {
+            }
+        }
+        // story Section
+        & .storySection {
+            & .container {
+            }
+            & .successStoryHeading {
+                font-size: 37px;
+            }
+            & .successStorySlider {
+                & .owl-stage-outer {
+                }
+                & .item-video {
+                    & .owl-video-tn {
+                    }
+                    & .owl-video-play-icon {
+                        height: 65px;
+                        width: 65px;
+                        background-size: 65px;
+                        &:hover {
+                        }
+                    }
+                    & iframe {
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev ,
+                    & .owl-next {
+                        & img {
+                        }
+                    }
+                    & .owl-prev {}
+                    & .owl-next {}
+                }
+            }
+            & .successText {
+            }
+            & .farmerText {
+            }
+        }
+          // FAQs Section
+        & .faqSection {
+            & .container {
+            }
+            & .faqHeading {
+                font-size: 37px;
+            }
+            & .accordion {
+                & .accordion-item {
+                    &:last-child {
+                    }
+                    & .accordion-header {
+                        & .accordion-button {
+                            &::after {
+                            }
+                            &.collapsed {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                        }
+                    }
+                }
+            }
+        }
+        // news Section
+        & .newsSection {
+            & .container {
+            }
+            & .newsHeading {
+                font-size: 37px;
+            }
+            & .newsItems {
+                & .newsItem {
+                    & .newsItemInner {
+                        & .newsItemImg {
+                            & img {
+                            }
+                        }
+                        & .newsItemHeading {
+                        }
+                        & .newsItemContent {
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-size: 20px;
+                width: 120px;
+                height: 38px;
+                &:hover {
+                }
+            }
+        }
+        // Collabrations Section
+        & .collabrationsSection {
+            & .container {
+            }
+            & .collabrationsHeading {
+                font-size: 37px;
+            }
+            & .collabrationsSubHeading {
+                font-size: 26px;
+                line-height: 50px;
+            }
+            & .collabrationsProcess {
+            }
+        }
+        // Certified Section
+        & .certifiedSection {
+            & .container {
+            }
+            & .certifiedHeading {
+                font-size: 37px;
+            }
+            & .certifiedItems {
+                & .certifiedItem  {
+                    & .certifiedItemInner {
+                        width: 125px;
+                        height: 125px;
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        & .heroSection {
+            & .heroSwiper {
+                & .heroSlideBox {
+                    & .heroSlide {
+                    }
+                }
+            }
+            
+            & .swiper-button-next {
+                &::after {
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .swiper-button-prev  {
+                &::after {
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .dgcaImg {
+                right: 50px;
+                bottom: 50px;
+                & img {
+                    height: 120px;
+                }
+            }
+        }
+        & .garudaAerospaceSection {
+            & .garudaAerospaceImg {
+                & img {
+                }
+            }
+            & .garudaAerospaceHeading {
+                font-size: 27px;
+                padding-top: 22px;
+            }
+            & .garudaAerospaceSubHeading {
+                font-size: 25px;
+                padding-top: 8px;
+            }
+            & .garudaAerospaceContent {
+                font-size: 15px;
+                padding-top: 11px;
+            }
+            & .garudaAerospaceBtn {
+                & span {
+                    font-size: 15px;
+                    & img {
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+        }
+        & .weAreBuiltSection {
+            & .weAreBuiltHeading {
+                font-size: 26.6px;
+                line-height: 166.3%;
+            }
+            & .weAreBuiltItems {
+                & .weAreBuiltItem {
+                    & .weAreBuiltItemInner {
+                        border-radius: 20px;
+                        padding: 30px 10px;
+                        & .weAreBuiltCounterValue {
+                            font-size: 38px;
+                            line-height: 100%;
+                        }
+                        & .weAreBuiltCounterLabel {
+                            font-size: 16px;
+                            line-height: 100%;
+                            letter-spacing: 0.07em;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .industriesSection {
+            & .container {
+            }
+            & .industriesHeading {
+                font-size: 27px;
+                line-height: 114.3%;
+            }
+            & .industriesItems {
+                & .industriesItem {
+                    & .industriesItemInner {
+                        border-radius: 20px;
+                        padding: 14px;
+                        & .industriesItemImg {
+                            border-radius: 8px;
+                            & img {
+                                aspect-ratio: 45/35.5;
+                                border-radius: 8px;
+                            }
+                        }
+                        & .industriesItemHeading {
+                            font-size: 19px;
+                            line-height: 114.3%;
+                            padding-top: 20px;
+                        }
+                        & .industriesItemContent {
+                            font-size: 14px;
+                            line-height: 147.8%;
+                            padding-top: 8px;
+                        }
+                        & .IndustriesItemBtn {
+                            padding-bottom: 5px;
+                            & a {
+                                border-radius: 10px;
+                                font-size: 15px;
+                                line-height: 18px;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            & .viewAllBtn {
+                font-size: 18px;
+                width: 110px;
+                height: 34px;
+                &:hover {
+                }
+            }
+        }
+        // product section
+        & .ourProductsSection {
+            & .sectionHeading {
+                font-size: 27px;
+            }
+            & .productMainCard {
+                & .cardImg {
+                    & img {}
+                }
+                & .cardDetail {
+                    & .cardHeading {
+                        font-size: 27px;
+                    }
+                    & .cardPara {
+                        font-size: 15px;
+                    }
+                    & .reserveBtn {
+                        font-size: 18px;
+                        & img {
+                            height: 12px;
+                        }
+                    }
+                    & .buyNowBtn {
+                        font-size: 18px;
+                        width: 115px;
+                        height: 36px;
+                    }
+                }
+            }
+            & .productCard {
+                & .proImg {
+                    height: 220px;
+                    & img {
+                    }
+                }
+                & .proDetails {
+                    padding: 0 5px 10px 5px;
+                }
+                & .proHead {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                & .readMoreBtn {
+                    font-size: 14px;
+                }
+                & .enquiryBtn {
+                    font-size: 14px;
+                }
+            }
+            & .viewAllBtn {
+                font-size: 18px;
+                width: 110px;
+                height: 34px;
+                &:hover {
+                }
+            }
+        }
+          // Why Us Section
+        & .whyUsSection {
+            & .container {
+            }
+            & .whyUsHeading {
+                font-size: 27px;
+            }
+            & .whyUsProcess {
+            }
+        }
+        // story Section
+        & .storySection {
+            & .container {
+            }
+            & .successStoryHeading {
+                font-size: 27px;
+            }
+            & .successStorySlider {
+                & .owl-stage-outer {
+                }
+                & .item-video {
+                    & .owl-video-tn {
+                    }
+                    & .owl-video-play-icon {
+                        background-size: 55px;
+                        height: 55px;
+                        width: 55px;
+                        &:hover {
+                        }
+                    }
+                    & iframe {
+                    }
+                }
+                & .owl-nav {
+                    margin-top: 20px;
+                    & .owl-prev ,
+                    & .owl-next {
+                        height: 32px;
+                        width: 32px;
+                        margin: 0 15px;
+                        & img {
+                            height: 12px;
+                        }
+                    }
+                    & .owl-prev {}
+                    & .owl-next {}
+                }
+            }
+            & .successText {
+                font-size: 15px;
+            }
+            & .farmerText {
+                font-size: 20px;
+            }
+        }
+        // FAQs Section
+        & .faqSection {
+            & .container {
+            }
+            & .faqHeading {
+                font-size: 27px;
+            }
+            & .accordion {
+                & .accordion-item {
+                    padding: 17px 0;
+                    &:last-child {
+                    }
+                    & .accordion-header {
+                        & .accordion-button {
+                            font-size: 17px;
+                            line-height: 18px;
+                            &::after {
+                            }
+                            &.collapsed {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        // news Section
+        & .newsSection {
+            & .container {
+            }
+            & .newsHeading {
+                font-size: 27px;
+            }
+            & .newsItems {
+                & .newsItem {
+                    & .newsItemInner {
+                        & .newsItemImg {
+                            & img {
+                            }
+                        }
+                        & .newsItemHeading {
+                            font-size: 16px;
+                        }
+                        & .newsItemContent {
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-size: 18px;
+                width: 110px;
+                height: 34px;
+                &:hover {
+                }
+            }
+        }
+        // Collabrations Section
+        & .collabrationsSection {
+            & .container {
+            }
+            & .collabrationsHeading {
+                font-size: 27px;
+            }
+            & .collabrationsSubHeading {
+                font-size: 20px;
+                line-height: 40px;
+            }
+            & .collabrationsProcess {
+            }
+        }
+        // Certified Section
+        & .certifiedSection {
+            & .container {
+            }
+            & .certifiedHeading {
+                font-size: 27px;
+            }
+            & .certifiedItems {
+                & .certifiedItem  {
+                    & .certifiedItemInner {
+                        height: 110px;
+                        width: 110px;
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        & .heroSection {
+            & .heroSwiper {
+                & .heroSlideBox {
+                    & .heroSlide {
+                    }
+                }
+            }
+            & .swiper-button-next {
+                &::after {
+                    height: 30px !important;
+                    width: 30px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .swiper-button-prev  {
+                &::after {
+                    height: 30px !important;
+                    width: 30px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .dgcaImg {
+                right: 40px;
+                bottom: 40px;
+                & img {
+                    height: 100px;
+                }
+            }
+        }
+        & .garudaAerospaceSection {
+            & .garudaAerospaceImg {
+                & img {
+                }
+            }
+            & .garudaAerospaceHeading {
+                font-size: 27px;
+                padding-top: 22px;
+            }
+            & .garudaAerospaceSubHeading {
+                font-size: 25px;
+                padding-top: 7px;
+            }
+            & .garudaAerospaceContent {
+                font-size: 16px;
+                padding-top: 8px;
+                line-height: 125%;
+            }
+            & .garudaAerospaceBtn {
+                & span {
+                    font-size: 17px;
+                    & img {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+                &:hover {
+                    & span {
+                        & img {
+
+                        }
+                    }
+                }
+            }
+        }
+        & .weAreBuiltSection {
+            & .weAreBuiltHeading {
+                font-size: 26.6px;
+                line-height: 166.3%;
+            }
+            & .weAreBuiltItems {
+                & .weAreBuiltItem {
+                    & .weAreBuiltItemInner {
+                        border-radius: 20px;
+                        padding: 30px 10px;
+                        & .weAreBuiltCounterValue {
+                            font-size: 38px;
+                            line-height: 130%;
+                        }
+                        & .weAreBuiltCounterLabel {
+                            font-size: 16px;
+                            line-height: 100%;
+                            letter-spacing: 0.07em;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .industriesSection {
+            & .container {
+            }
+            & .industriesHeading {
+                font-size: 27px;
+                line-height: 114.3%;
+            }
+            & .industriesItems {
+                & .industriesItem {
+                    & .industriesItemInner {
+                        border-radius: 20px;
+                        padding: 18px;
+                        & .industriesItemImg {
+                            border-radius: 8px;
+                            & img {
+                                aspect-ratio: 65/35.5;
+                                border-radius: 8px;
+                            }
+                        }
+                        & .industriesItemHeading {
+                            font-size: 24px;
+                            line-height: 114.3%;
+                            padding-top: 28px;
+                        }
+                        & .industriesItemContent {
+                            font-size: 16px;
+                            line-height: 147.8%;
+                            padding-top: 8px;
+                        }
+                        & .IndustriesItemBtn {
+                            padding-bottom: 5px;
+                            & a {
+                                border-radius: 10px;
+                                font-size: 15px;
+                                line-height: 18px;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // product section
+        & .ourProductsSection {
+            & .sectionHeading {
+            }
+            & .productMainCard {
+                & .cardImg {
+                    & img {}
+                }
+                & .cardDetail {
+                    & .cardHeading {
+                    }
+                    & .cardPara {
+                        font-size: 16px;
+                        line-height: 125%;
+                    }
+                    & .reserveBtn {
+                        font-size: 17px;
+                        & img {
+                        }
+                    }
+                    & .buyNowBtn {
+                        font-size: 17px;
+                        width: 110px;
+                        height: 34px;
+                    }
+                }
+            }
+            & .productCard {
+                & .proImg {
+                    & img {
+                    }
+                }
+                & .proDetails {
+                    padding: 0 5px 18px 5px;
+                }
+                & .proHead {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                & .readMoreBtn {
+                }
+                & .enquiryBtn {
+                }
+            }
+            & .viewAllBtn {
+                &:hover {
+                }
+            }
+        }
+          // Why Us Section
+        & .whyUsSection {
+            & .container {
+            }
+            & .whyUsHeading {
+            }
+            & .whyUsProcess {
+            }
+        }
+        // story Section
+        & .storySection {
+            & .container {
+            }
+            & .successStoryHeading {
+            }
+            & .successStorySlider {
+                & .owl-stage-outer {
+                }
+                & .item-video {
+                    & .owl-video-tn {
+                    }
+                    & .owl-video-play-icon {
+                        &:hover {
+                        }
+                    }
+                    & iframe {
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev ,
+                    & .owl-next {
+                        & img {
+                        }
+                    }
+                    & .owl-prev {}
+                    & .owl-next {}
+                }
+            }
+            & .successText {
+            }
+            & .farmerText {
+            }
+        }
+        // FAQs Section
+        & .faqSection {
+            & .container {
+            }
+            & .faqHeading {
+            }
+            & .accordion {
+                & .accordion-item {
+                    &:last-child {
+                    }
+                    & .accordion-header {
+                        & .accordion-button {
+                            &::after {
+                            }
+                            &.collapsed {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                        }
+                    }
+                }
+            }
+        }
+      // news Section
+        & .newsSection {
+            & .container {
+            }
+            & .newsHeading {
+            }
+            & .newsItems {
+                & .newsItem {
+                    & .newsItemInner {
+                        & .newsItemImg {
+                            & img {
+                            }
+                        }
+                        & .newsItemHeading {
+                        }
+                        & .newsItemContent {
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                &:hover {
+                }
+            }
+        }
+        // Collabrations Section
+        & .collabrationsSection {
+            & .container {
+            }
+            & .collabrationsHeading {
+            }
+            & .collabrationsSubHeading {
+            }
+            & .collabrationsProcess {
+            }
+        }
+        // Certified Section
+        & .certifiedSection {
+            & .container {
+            }
+            & .certifiedHeading {
+            }
+            & .certifiedItems {
+                & .certifiedItem  {
+                    & .certifiedItemInner {
+                        height: 90px;
+                        width: 90px;
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        & .heroSection {
+            & .heroSwiper {
+                & .heroSlideBox {
+                    & .heroSlide {
+                    }
+                }
+            }
+            & .swiper-button-next {
+                &::after {
+                    height: 25px !important;
+                    width: 25px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .swiper-button-prev  {
+                &::after {
+                    height: 25px !important;
+                    width: 25px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .dgcaImg {
+                right: 30px;
+                bottom: 30px;
+                & img {
+                    height: 75px;
+                }
+            }
+        }
+        & .garudaAerospaceSection {
+            & .garudaAerospaceImg {
+                & img {
+                }
+            }
+            & .garudaAerospaceHeading {
+                font-size: 27px;
+                padding-top: 22px;
+            }
+            & .garudaAerospaceSubHeading {
+                font-size: 25px;
+                padding-top: 8px;
+            }
+            & .garudaAerospaceContent {
+                font-size: 15px;
+                padding-top: 11px;
+                line-height: 24px;
+            }
+            & .garudaAerospaceBtn {
+                & span {
+                    font-size: 15px;
+                    & img {
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+        }
+        
+        & .industriesSection {
+            & .container {
+            }
+            & .industriesHeading {
+                font-size: 27px;
+                line-height: 114.3%;
+            }
+            & .industriesItems {
+                & .industriesItem {
+                    & .industriesItemInner {
+                        border-radius: 20px;
+                        padding: 18px;
+                        & .industriesItemImg {
+                            border-radius: 8px;
+                            & img {
+                                aspect-ratio: 50/35.5;
+                                border-radius: 8px;
+                            }
+                        }
+                        & .industriesItemHeading {
+                            font-size: 20px;
+                            line-height: 114.3%;
+                            padding-top: 18px;
+                        }
+                        & .industriesItemContent {
+                            font-size: 16px;
+                            line-height: 24px;
+                            padding-top: 6px;
+                        }
+                        & .IndustriesItemBtn {
+                            padding-bottom: 5px;
+                            & a {
+                                border-radius: 10px;
+                                font-size: 15px;
+                                line-height: 18px;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-size: 16px;
+                width: 94px;
+                height: 30px;
+                &:hover {
+                }
+            }
+        }
+        
+         // product section
+        & .ourProductsSection {
+            & .sectionHeading {
+            }
+            & .productMainCard {
+                & .cardImg {
+                    & img {}
+                }
+                & .cardDetail {
+                    padding: 0;
+                    & .cardHeading {
+                    }
+                    & .cardPara {
+                        line-height: 24px;
+                    }
+                    & .reserveBtn {
+                        & img {
+                        }
+                    }
+                    & .buyNowBtn {
+                    }
+                }
+            }
+            & .productCard {
+                height: 100%;
+                & .proImg {
+                    & img {
+                    }
+                }
+                & .proDetails {
+                }
+                & .proHead {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                & .readMoreBtn {
+                }
+                & .enquiryBtn {
+                }
+            }
+            & .viewAllBtn {
+                font-size: 16px;
+                width: 94px;
+                height: 30px;
+                &:hover {
+                }
+            }
+        }
+          // Why Us Section
+        & .whyUsSection {
+            & .container {
+            }
+            & .whyUsHeading {
+            }
+            & .whyUsProcess {
+            }
+        }
+        // story Section
+        & .storySection {
+            & .container {
+            }
+            & .successStoryHeading {
+            }
+            & .successStorySlider {
+                & .owl-stage-outer {
+                }
+                & .item-video {
+                    & .owl-video-tn {
+                    }
+                    & .owl-video-play-icon {
+                        &:hover {
+                        }
+                    }
+                    & iframe {
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev ,
+                    & .owl-next {
+                        & img {
+                        }
+                    }
+                    & .owl-prev {}
+                    & .owl-next {}
+                }
+            }
+            & .successText {
+            }
+            & .farmerText {
+            }
+        }
+        
+          // FAQs Section
+        & .faqSection {
+            & .container {
+            }
+            & .faqHeading {
+            }
+            & .accordion {
+                & .accordion-item {
+                    &:last-child {
+                    }
+                    & .accordion-header {
+                        & .accordion-button {
+                            &::after {
+                            }
+                            &.collapsed {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                        }
+                    }
+                }
+            }
+        }
+        // news Section
+        & .newsSection {
+            & .container {
+            }
+            & .newsHeading {
+            }
+            & .newsItems {
+                & .newsItem {
+                    & .newsItemInner {
+                        & .newsItemImg {
+                            & img {
+                            }
+                        }
+                        & .newsItemHeading {
+                        }
+                        & .newsItemContent {
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                &:hover {
+                }
+            }
+        }
+        // Collabrations Section
+        & .collabrationsSection {
+            & .container {
+            }
+            & .collabrationsHeading {
+            }
+            & .collabrationsSubHeading {
+            }
+            & .collabrationsProcess {
+            }
+        }
+        // Certified Section
+        & .certifiedSection {
+            & .container {
+            }
+            & .certifiedHeading {
+            }
+            & .certifiedItems {
+                & .certifiedItem  {
+                    & .certifiedItemInner {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        & .heroSection {
+            & .heroSwiper {
+                & .heroSlideBox {
+                    & .heroSlide {
+                    }
+                }
+            }
+            & .swiper-button-next {
+                &::after {
+                    height: 22px !important;
+                    width: 22px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .swiper-button-prev  {
+                &::after {
+                    height: 22px !important;
+                    width: 22px !important;
+                }
+                &.swiper-button-disabled {
+                    &::after {
+                    }
+                }
+            }
+            & .dgcaImg {
+                right: 20px;
+                bottom: 20px;
+                & img {
+                    height: 50px;
+                }
+            }
+        }
+        & .garudaAerospaceSection {
+            & .garudaAerospaceImg {
+                & img {
+                }
+            }
+            & .garudaAerospaceHeading {
+                font-size: 20px;
+                padding-top: 18px;
+            }
+            & .garudaAerospaceSubHeading {
+                font-size: 17px;
+                padding-top: 10px;
+            }
+            & .garudaAerospaceContent {
+                font-size: 14px;
+                padding-top: 9px;
+                line-height: 24px;
+            }
+            & .garudaAerospaceBtn {
+                & span {
+                    font-size: 13px;
+                    & img {
+                        width: 19px;
+                        height: 19px;
+                    }
+                }
+            }
+        }
+        & .weAreBuiltSection {
+            & .weAreBuiltSectionInner {
+                padding: 0;
+            }
+            & .weAreBuiltHeading {
+                font-size: 20px;
+                line-height: 100%;
+            }
+            & .weAreBuiltItems {
+                & .weAreBuiltItem {
+                    & .weAreBuiltItemInner {
+                        border-radius: 20px;
+                        padding: 30px 10px;
+                        & .weAreBuiltCounterValue {
+                            font-size: 38px;
+                            line-height: 130%;
+                        }
+                        & .weAreBuiltCounterLabel {
+                            font-size: 16px;
+                            line-height: 100%;
+                            letter-spacing: 0.07em;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .industriesSection {
+            & .container {
+            }
+            & .industriesHeading {
+                font-size: 24px;
+            }
+            & .industriesItems {
+                & .industriesItem {
+                    & .industriesItemInner {
+                        border-radius: 20px;
+                        padding: 18px;
+                        & .industriesItemImg {
+                            border-radius: 8px;
+                            & img {
+                                aspect-ratio: 40/35.5;
+                                border-radius: 8px;
+                            }
+                        }
+                        & .industriesItemHeading {
+                            font-size: 18px;
+                            line-height: 114.3%;
+                            padding-top: 20px;
+                        }
+                        & .industriesItemContent {
+                            font-size: 14px;
+                            line-height: 24px;
+                            padding-top: 8px;
+                        }
+                        & .IndustriesItemBtn {
+                            padding-bottom: 5px;
+                            & a {
+                                border-radius: 10px;
+                                font-size: 14px;
+                                line-height: 18px;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-size: 16px;
+                width: 90px;
+                height: 30px;
+            }
+        }
+        
+         // product section
+        & .ourProductsSection {
+            & .sectionHeading {
+                font-size: 24px;
+                & + .col-12 {
+                    padding: 0;
+                }
+            }
+            & .productMainCard {
+                & .cardImg {
+                    & img {}
+                }
+                & .cardDetail {
+                    padding: 0;
+                    & .cardHeading {
+                        font-size: 20px;
+                        margin-top: 8px;
+                        margin-bottom: 5px;
+                    }
+                    & .cardPara {
+                        font-size: 14px;
+                        line-height: 135%;
+                        margin-bottom: 8px;
+                        line-height: 24px;
+                    }
+                    & .reserveBtn {
+                        font-size: 14px;
+                        & img {
+                        }
+                    }
+                    & .buyNowBtn {
+                        font-size: 14px;
+                        width: 90px;
+                        height: 30px;
+                    }
+                }
+            }
+            & .productCard {
+                & .proImg {
+                    & img {
+                    }
+                }
+                & .proDetails {
+                }
+                & .proHead {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                & .readMoreBtn {
+                }
+                & .enquiryBtn {
+                }
+            }
+            & .viewAllBtn {
+                font-size: 16px;
+                width: 90px;
+                height: 30px;
+                &:hover {
+                }
+            }
+        }
+          // Why Us Section
+        & .whyUsSection {
+            & .container {
+            }
+            & .whyUsHeading {
+                font-size: 24px;
+            }
+            & .whyUsProcess {
+            }
+        }
+        // story Section
+        & .storySection {
+            & .container {
+            }
+            & .successStoryHeading {
+                font-size: 24px;
+            }
+            & .successStorySlider {
+                & .owl-stage-outer {
+                }
+                & .item-video {
+                    & .owl-video-tn {
+                    }
+                    & .owl-video-play-icon {
+                        &:hover {
+                        }
+                    }
+                    & iframe {
+                    }
+                }
+                & .owl-nav {
+                    & .owl-prev ,
+                    & .owl-next {
+                        & img {
+                        }
+                    }
+                    & .owl-prev {}
+                    & .owl-next {}
+                }
+            }
+            & .successText {
+                font-size: 14px;
+            }
+            & .farmerText {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        
+          // FAQs Section
+        & .faqSection {
+            & .container {
+            }
+            & .faqHeading {
+            }
+            & .accordion {
+                & .accordion-item {
+                    padding: 12px 0;
+                    &:last-child {
+                    }
+                    & .accordion-header {
+                        & .accordion-button {
+                            padding: 10px;
+                            font-size: 16px;
+                            &::after {
+                            }
+                            &.collapsed {
+                                &::after {
+                                }
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            padding: 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        // news Section
+        & .newsSection {
+            & .container {
+            }
+            & .newsHeading {
+                font-size: 24px;
+            }
+            & .newsItems {
+                & .newsItem {
+                    & .newsItemInner {
+                        padding: 15px 0;
+                        & .newsItemImg {
+                            & img {
+                            }
+                        }
+                        & .newsItemHeading {
+                        }
+                        & .newsItemContent {
+                        }
+                    }
+                }
+            }
+            & .viewAllBtn {
+                font-size: 16px;
+                width: 90px;
+                height: 30px;
+                &:hover {
+                }
+            }
+        }
+        // Collabrations Section
+        & .collabrationsSection {
+            & .container {
+            }
+            & .collabrationsHeading {
+                font-size: 24px;
+            }
+            & .collabrationsSubHeading {
+                font-size: 18px;
+            }
+            & .collabrationsProcess {
+            }
+        }
+        // Certified Section
+        & .certifiedSection {
+            & .container {
+            }
+            & .certifiedHeading {
+                font-size: 24px;
+            }
+            & .certifiedItems {
+                & .certifiedItem  {
+                    & .certifiedItemInner {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+[data-bs-theme=dark] {
+    & [data-page-name=index2] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  homePage end  ]@@@@@@@@@@@@@@@@@@@@@@
